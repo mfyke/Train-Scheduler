@@ -1,0 +1,16 @@
+#top {
+	border-radius: 5px;
+}
+
+.panel{
+	padding: 0px;
+}
+#title {
+	color: #FFF;
+}
+#subtitle {
+	color: #FFF;
+}
+#top {
+	background-color: #000000;
+}

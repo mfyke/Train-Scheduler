@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Tracker</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+	<div id="top" class="text-center jumbotron col-xs-offset-1 col-xs-10">
+		<h1 id="title" class="display-3">Employee Data Management</h1>
+		<h2 id="subtitle" class="lead">A Comprehensive Directory of Employee Billable Hours</h2>
+	</div>
+	<div class= panel-group>
+		<div id="employeeList" class="panel panel-primary col-xs-offset-1 col-xs-10">
+			 <div class="panel-heading">Current Employees</div>
+		     <div class="panel-body">
+		     	<table class="table">
+				  <thead>
+				    <tr>
+				      <th>Employee Name</th>
+				      <th>Role</th>
+				      <th>Start Date</th>
+				      <th>Months Worked</th>
+				      <th>Monthly Rate ($)</th>
+				      <th>Total Billed ($)</th>
+				    </tr>
+				  </thead>
+				  <tbody id="employeeArea">
+				    
+				  </tbody>
+				</table>
+		     </div>
+		</div>
+		<div id="employeeAdd" class="panel panel-primary col-xs-offset-1 col-xs-10">
+			 <div class="panel-heading">Add Employees</div>
+		     <div class="panel-body">
+		     	<form>
+				  <div class="form-group">
+				    <label for="formGroupExampleInput">Employee Name</label>
+				    <input type="text" class="form-control" id="name-input" placeholder="">
+				  </div>
+				  <div class="form-group">
+				    <label for="formGroupExampleInput2">Role</label>
+				    <input type="text" class="form-control" id="role-input" placeholder="">
+				  </div>
+				  <div class="form-group">
+				    <label for="formGroupExampleInput2">Start Date (DD/MM/YY - ex 01/01/89)</label>
+				    <input type="text" class="form-control" id="start-input" placeholder="">
+				  </div>
+				  <div class="form-group">
+				    <label for="formGroupExampleInput2">Monthly Rate</label>
+				    <input type="text" class="form-control" id="rate-input" placeholder="">
+				  </div>
+				  <button id="bonerFucker" type="submit" class="btn btn-primary">Submit</button>
+				</form>
+		     </div>
+		</div>
+	</div>
+	<script src="moment.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/thing.js"></script>
+</body>
+
+</html>
